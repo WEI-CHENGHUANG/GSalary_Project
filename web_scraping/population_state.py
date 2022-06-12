@@ -5,7 +5,7 @@ sys.path.append("..")
 from fulltime_jobs_info import extract
 
 # from model.database import insertNewMembers
-import mysql.connector #pip install mysql-connector-python
+import mysql.connector  # pip install mysql-connector-python
 from mysql.connector import Error
 from dotenv import load_dotenv
 import os
@@ -14,13 +14,6 @@ import time
 load_dotenv()
 
 
-# def insertData(insert, *args):
-#     try:
-#         cursor = cnx.cursor(buffered=True)
-#         cursor.execute(insert, *args)
-#         cnx.commit()
-#     except Error as e:
-#         return "Wrong"
 def update(update_syntax, *args):
     try:
         cursor = cnx.cursor(buffered=True)
@@ -61,10 +54,8 @@ if __name__ == "__main__":
         name = key
         population = float(population_state[key]) * 1000
         # ==============DB==================
-        # insert = "INSERT INTO populationAU (state_name, population) VALUES(%s, %s)"
         update_syntax = "UPDATE populationAU SET population = %s WHERE state_name = %s"
         update(update_syntax, (population, name))
-        # insertNewMembers(insert, (name, population))
     end = time.time()
     print("4/4")
     print((end - start) / 60)

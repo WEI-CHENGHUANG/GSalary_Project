@@ -87,9 +87,6 @@ with open("./final_result/fulltime_jobs_url.csv", "r") as open_file:
 
 
 # ===============capture the key words of programming and database =================
-# one_url = "https://www.seek.com.au/job/56806929?type=standard"
-# current_page = extract(one_url)
-# transform(current_page)
 # open the programming languages dictionary
 with open("./dictionaries/languages_dict.csv", "r") as pg_open_file:
     reader = csv.reader(pg_open_file)
@@ -160,4 +157,3 @@ if __name__ == "__main__":
     end = time.time()
     print("2/4")
     print((end - start) / 60)
-    # print(f'Each job post web scraping finished and spent: {(end - start) / 60} min(s). => 2 out 3.')
