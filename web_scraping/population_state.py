@@ -4,7 +4,6 @@ sys.path.append("..")
 
 from fulltime_jobs_info import extract
 
-# from model.database import insertNewMembers
 import mysql.connector  # pip install mysql-connector-python
 from mysql.connector import Error
 from dotenv import load_dotenv
