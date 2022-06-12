@@ -1,0 +1,350 @@
+@font-face {
+    font-family: "Collegiate";
+    src: url(../fonts/CollegiateFLF.ttf);
+}
+
+@font-face {
+    font-family: "Collegiate-2";
+    src: url(../fonts/CollegiateBlackFLF.ttf);
+}
+
+@font-face {
+    font-family: "Morille";
+    src: url(../fonts/The\ Morille.otf);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.navbar {
+    background-color: #e3f2fd;
+}
+
+.container-fluid>.navbar-brand {
+    font-size: 38px;
+    font-family: "Collegiate", sans-serif;
+    margin-left: 250px;
+}
+
+.navbar-nav {
+    font-size: 28px;
+    margin-right: 250px;
+    font-family: "Collegiate-2", sans-serif;
+    text-decoration: underline;
+}
+
+.nav-item {
+    margin: 0 20px;
+}
+
+.btn {
+    border-color: black;
+}
+
+.nav-link {
+    background-color: #e3f2fd;
+    border: 0;
+}
+
+.nav-item>#logInAndRegisterbtn {
+    display: none;
+}
+
+.OutermemberInfoBox {
+    /* background-color: rgb(12, 11, 10); */
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.innermemberInfoBox {
+    /* background-color: antiquewhite; */
+    width: 700px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.title {
+    background-color: rgba(10, 72, 133, 255);
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    border-radius: 10px 10px 0 0;
+}
+
+.title>p {
+    margin-top: 20px;
+    font-size: 30px;
+    color: white;
+    font-family: "Morille", sans-serif;
+}
+
+.infoContent {
+    background-color: rgba(241, 246, 242, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 700px;
+    height: 220px;
+}
+
+.photoContainer {
+    /* background-color: rgb(74, 243, 139); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 230px;
+    height: 215px;
+}
+
+.photo {
+    /* background-color: rgb(74, 105, 243); */
+    width: 150px;
+    height: 130px;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+.userimage {
+    width: 150px;
+    height: 130px;
+}
+
+.uploadbtn>button {
+    display: block;
+    width: 150px;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    background-color: #d9c4ab;
+}
+
+.uploadbtn>button:hover {
+    background-color: #deab6e;
+}
+
+.detail {
+    /* background-color: rgb(243, 240, 74); */
+    width: 450px;
+    height: 200px;
+}
+
+.memberId {
+    margin-top: 30px;
+}
+
+.memberId,
+.memberName,
+.memberEmail {
+    display: flex;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+
+.memberIdContent,
+.memberNameContent,
+.memberEmailContent {
+    margin-left: 30px;
+}
+
+/* Post part */
+.outerPostBar {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 180px;
+}
+
+.innerPostBarTop {
+    /* background-color: rgb(255, 0, 187); */
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.outerPostContainer1>div,
+.outerPostContainer2>div,
+.outerPostContainer3>div {
+    /* background-color: rgb(187, 255, 0); */
+    width: 800px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 2px solid;
+}
+
+.eachRow {
+    display: flex;
+    background-color: rgba(10, 72, 133, 255);
+    height: 30px;
+    color: white;
+}
+
+.left-container {
+    /* background-color: #b3d9ab; */
+    display: flex;
+    width: 420px;
+    margin-left: 2px;
+}
+
+.right-container {
+    /* background-color: #d9d4ab; */
+    display: flex;
+    width: 380px;
+}
+
+.left-name,
+.right-name {
+    width: 170px;
+}
+
+.fifthRow {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+.shareContent {
+    background-color: white;
+    width: 750px;
+    border-radius: 10px;
+    padding: 1px;
+    /* https://www.runoob.com/w3cnote/css-nowrap-break-word.html */
+    white-space: pre-line;
+}
+
+#postForm {
+    border-radius: 5px;
+    border: 2px solid;
+    font-weight: bold;
+}
+
+#postForm>.eachRow>.left-container>input {
+    border-radius: 5px;
+    height: 29px;
+}
+
+#postForm>.eachRow>.right-container>input {
+    border-radius: 5px;
+    height: 29px;
+    margin-top: 0.5px;
+}
+
+#inputShareContent {
+    width: 750px;
+    border-radius: 10px;
+    border: 1.5px solid;
+    padding: 1px;
+}
+
+#postForm>.fifthRow {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#postForm>.fifthRow>button {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 4px;
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+#postForm>.fifthRow>button:hover {
+    background-color: #d9d4ab;
+}
+
+/* post input areas */
+.serviceYearsContainer>input {
+    border-radius: 10px;
+}
+
+.companyNameContainer>input {
+    border-radius: 10px;
+}
+
+.positionTitleContainer>input {
+    border-radius: 10px;
+}
+
+.avghrsContainer>input {
+    border-radius: 10px;
+}
+
+.annualSalaryContainer>input {
+    border-radius: 10px;
+}
+
+/* =========Load More======== */
+.loadMore,
+.ownloadMore {
+    display: flex;
+    justify-content: center;
+}
+
+.loadMorebtn,
+.ownloadMorebtn {
+    background-color: #5d4242;
+    height: 50px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.938);
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#cover {
+    position: absolute;
+    height: 20000px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    z-index: 10;
+    /* display: none; */
+}
+
+/* ======================== */
+
+@media (max-width: 1200px) {
+    /* Nav bar */
+
+    .container-fluid>.navbar-brand {
+        margin-left: 80px;
+    }
+
+    .navbar-nav {
+        margin-right: 80px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    /* Nav bar */
+    .container-fluid>.navbar-brand {
+        margin-left: 0;
+    }
+
+    .navbar-nav {
+        margin-right: 0;
+    }
+
+    .welcomeZoneContent {
+        display: flex;
+        width: 100%;
+
+    }
+}

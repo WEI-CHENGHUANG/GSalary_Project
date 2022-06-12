@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="{{url_for('static', filename='CSS/index.css')}}" rel="stylesheet" type="text/css" />
+  <!-- <link href="../static/CSS/index.css" rel="stylesheet" type="text/css" /> -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- ============ -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> -->
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <title>G'day</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+  <div id="signInPopup" class="popup">{% include 'signIn.html' %}</div>
+  <div id="registerPopup" class="popup">{% include 'register.html' %}</div>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://www.engineersalaryquery.website">G'day Salary</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="d-flex" role="search">
+          <input class="querykeyword form-control me-2" type="search" placeholder="Search Company"
+            aria-label="Search" />
+          <button type="button" class="btn btn-outline-success" onclick="querytagsCheck()">
+            Search
+          </button>
+        </form>
+      </div>
+      <ul class="navbar-nav">
+        <li class="nav-item" id="logInAndRegisterContainer">
+          <button class="nav-link active" id="logInAndRegisterbtn" onclick="btnPushItems_2()">
+            Log In/Sign Up
+          </button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link active" onclick="memberCornerCheck()">
+            Member Corner
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="welcomeZone">
+    <div class="welcomeZoneContent">
+      <div class="welcomeZoneItems_1">
+        <div class="loader1 --1"></div>
+        <!-- <table class="table table-hover table-fixed" id="jobPostsTable"> -->
+        <table class="table table-hover table-fixed" id="jobPostsTable">
+          <thead style="z-index: 8">
+            <tr class="table-info">
+              <th scope="col">#</th>
+              <th scope="col" class="col_header">company</th>
+              <th scope="col" class="col_header">title</th>
+              <th scope="col" class="col_header">location</th>
+              <th scope="col" class="col_header">Job Post Link</th>
+            </tr>
+          </thead>
+          <tbody data-job-container id="JobPosttbody">
+            <template data-job-template>
+              <tr class="table-light">
+                <th scope="row" data-number>number</th>
+                <td data-company-name>company name</td>
+                <td data-job-title>job title</td>
+                <td data-location>office location</td>
+                <td data-ulr>
+                  <a href="#" data-ulr_a>Job Post Detail</a>
+                </td>
+              </tr>
+            </template>
+          </tbody>
+        </table>
+        <div class="loadMorePosts"><button class="MorePostbtn" type="button"
+            onclick="userQueryCompany(allJobPostCount)">More
+            &nbsp&nbsp&nbspPosts</button>
+        </div>
+
+      </div>
+      <div class="welcomeZoneItems_2">
+        <div class="welcomeparagraph">
+          <h2>This is a Bugs list</h2>
+          <p>
+            These should be finished in 5 days:<br>
+            ** here needs to be my ETL graphy<br>
+            1. All page colors should readjust in 3 to 4 colors.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="totalAvgSalary">
+    <div class="loader2 --1"></div>
+    <div class="outertotalSalary">
+      <div class="midAvgSalary">
+        <p class="innerMidAvgSalary"></p>
+      </div>
+      <div class="midText">
+        <p>The average salary in Australia</p>
+      </div>
+      <div class="midCountSalary">
+        <p class="innerMidCountSalary"></p>
+      </div>
+    </div>
+  </div>
+  <div class="outContainer">
+    <div class="innerContainer">
+      <div class="titleForBarChart">
+        <h2>Average Salary by state</h2>
+        <div class="blockForCSSpurpose">
+          <p>100.00% / 200,000</p>
+        </div>
+      </div>
+      <div class="oneRowContainer">
+        <div class="stateName">
+          <img src="../static/pictures/statesIcons/platypus.png" alt="" />
+          <button class="state"><span class="stateDetail"></span></button>
+        </div>
+        <div class="outerbar progress">
+          <div class="innerbar1 progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+        </div>
+        <div class="stateAvgSalary">
+          <p class="stateAvgSalarytext">.....loading</p>
+        </div>
+      </div>
+      <div class="oneRowContainer">
+        <div class="stateName">
+          <img src="../static/pictures/statesIcons/Kangaroo.png" alt="" />
+          <button class="state"><span class="stateDetail"></span></button>
+        </div>
+        <div class="outerbar progress">
+          <div class="innerbar1 progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+        </div>
+        <div class="stateAvgSalary">
+          <p class="stateAvgSalarytext">.....loading</p>
+        </div>
+      </div>
+      <div class="oneRowContainer">
+        <div class="stateName">
+          <img src="../static/pictures/statesIcons/emu.png" alt="" />
+          <button class="state"><span class="stateDetail"></span></button>
+        </div>
+        <div class="outerbar progress">
+          <div class="innerbar1 progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+        </div>
+        <div class="stateAvgSalary">
+          <p class="stateAvgSalarytext">.....loading</p>
+        </div>
+      </div>
+      <div class="oneRowContainer">
+        <div class="stateName">
+          <img src="../static/pictures/statesIcons/koala.png" alt="" />
+          <button class="state"><span class="stateDetail"></span></button>
+        </div>
+        <div class="outerbar progress">
+          <div class="innerbar1 progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+        </div>
+        <div class="stateAvgSalary">
+          <p class="stateAvgSalarytext">.....loading</p>
+        </div>
+      </div>
+      <div class="oneRowContainer">
+        <div class="stateName">
+          <img src="../static/pictures/statesIcons/crocodile.png" alt="" />
+          <button class="state"><span class="stateDetail"></span></button>
+        </div>
+        <div class="outerbar progress">
+          <div class="innerbar1 progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+        </div>
+        <div class="stateAvgSalary">
+          <p class="stateAvgSalarytext">.....loading</p>
+        </div>
+      </div>
+      <div class="oneRowContainer">
+        <div class="stateName">
+          <img src="../static/pictures/statesIcons/wombat.png" alt="" />
+          <button class="state"><span class="stateDetail"></span></button>
+        </div>
+        <div class="outerbar progress">
+          <div class="innerbar1 progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+        </div>
+        <div class="stateAvgSalary">
+          <p class="stateAvgSalarytext">.....loading</p>
+        </div>
+      </div>
+    </div>
+    <div class="rightTablelangdb">
+      <div class="loader4 --1"></div>
+      <div class="innerrightTablelangdb" id="JobPostsTitle">
+        <div class="titlelangdb">
+          <p>Job Posts by PL & DB</p>
+        </div>
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="allaupg-tab" data-bs-toggle="tab" data-bs-target="#allaupg"
+              type="button" role="tab" aria-controls="allaupg" aria-selected="true">
+              PL ALL
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="allaudb-tab" data-bs-toggle="tab" data-bs-target="#allaudb" type="button"
+              role="tab" aria-controls="allaudb" aria-selected="false">
+              DB ALL
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="eachstatepg-tab" data-bs-toggle="tab" data-bs-target="#eachstatepg"
+              type="button" role="tab" aria-controls="eachstatepg" aria-selected="false">
+              PL STATE
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="eachstatedb-tab" data-bs-toggle="tab" data-bs-target="#eachstatedb"
+              type="button" role="tab" aria-controls="eachstatedb" aria-selected="false">
+              DB STATE
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="allaupg" role="tabpanel" aria-labelledby="allaupg-tab">
+          <table class="table table-hover">
+            <thead>
+              <tr class="table-dark">
+                <th scope="col">#</th>
+                <th scope="col" class="col_header">Programming Languages</th>
+                <th scope="col" class="col_header">Job Post</th>
+              </tr>
+            </thead>
+            <tbody allaupg-container1>
+              <template allpgdb-template1>
+                <tr class="table-light">
+                  <th scope="row" allpgdb-number1>number</th>
+                  <td allpgdb-name1>Pg name</td>
+                  <td allpgdb-counts1>counts</td>
+                </tr>
+              </template>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="tab-pane fade" id="allaudb" role="tabpanel" aria-labelledby="allaudb-tab">
+          <table class="table table-hover">
+            <thead>
+              <tr class="table-dark">
+                <th scope="col">#</th>
+                <th scope="col" class="col_header">Database Name</th>
+                <th scope="col" class="col_header">Job Post</th>
+              </tr>
+            </thead>
+            <tbody allaupg-container2>
+              <template allpgdb-template2>
+                <tr class="table-light">
+                  <th scope="row" allpgdb-number2>number</th>
+                  <td allpgdb-name2>DB name</td>
+                  <td allpgdb-counts2>counts</td>
+                </tr>
+              </template>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="tab-pane fade" id="eachstatepg" role="tabpanel" aria-labelledby="eachstatepg-tab">
+          <table class="table table-hover">
+            <thead>
+              <tr class="table-dark">
+                <th scope="col">State</th>
+                <th scope="col" class="col_header">Programming Name</th>
+                <th scope="col" class="col_header">Job Post</th>
+              </tr>
+            </thead>
+            <tbody allaupg-container3>
+              <template allpgdb-template3>
+                <tr class="table-light">
+                  <th scope="row" allpgdb-number3>number</th>
+                  <td allpgdb-name3>PG name</td>
+                  <td allpgdb-counts3>counts</td>
+                </tr>
+              </template>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="tab-pane fade" id="eachstatedb" role="tabpanel" aria-labelledby="eachstatedb-tab">
+          <table class="table table-hover">
+            <thead>
+              <tr class="table-dark">
+                <th scope="col">State</th>
+                <th scope="col" class="col_header">Database Name</th>
+                <th scope="col" class="col_header">Job Post</th>
+              </tr>
+            </thead>
+            <tbody allaupg-container4>
+              <template allpgdb-template4>
+                <tr class="table-light">
+                  <th scope="row" allpgdb-number4>number</th>
+                  <td allpgdb-name4>PG name</td>
+                  <td allpgdb-counts4>counts</td>
+                </tr>
+              </template>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="outerChartContainer">
+    <div class="innerchartContainer">
+      <div class="loader3 --1"></div>
+      <canvas id="myChart"></canvas>
+    </div>
+  </div>
+  <footer class="mt-auto">
+    <div class="footerBox">{% include 'footer.html' %}</div>
+  </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="{{url_for('static', filename='JS/index.js')}}"></script>
+<script src="{{url_for('static', filename='JS/tabs.js')}}"></script>
+<script src="{{url_for('static', filename='JS/memberPopup.js')}}"></script>
+<script src="{{url_for('static', filename='JS/lineChart.js')}}"></script>
+
+</html>

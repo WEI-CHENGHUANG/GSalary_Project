@@ -1,0 +1,26 @@
+,Database,Type
+0,Oracle,"Relational, Multi-model"
+1,MySQL,"Relational, Multi-model"
+2,Microsoft SQL Server,"Relational, Multi-model"
+3,PostgreSQL,"Relational, Multi-model"
+4,MongoDB,"Document, Multi-model"
+5,Redis,"Key-value, Multi-model"
+6,IBM Db2,"Relational, Multi-model"
+7,Elasticsearch,"Search engine, Multi-model"
+8,Microsoft Access,Relational
+9,SQLite,Relational
+10,Cassandra,Wide column
+11,MariaDB,"Relational, Multi-model"
+12,Splunk,Search engine
+13,Snowflake,Relational
+14,Microsoft Azure SQL Database,"Relational, Multi-model"
+15,Amazon DynamoDB,Multi-model
+16,Hive,Relational
+17,Teradata,"Relational, Multi-model"
+18,Neo4j,Graph
+19,Solr,"Search engine, Multi-model"
+20,SAP HANA,"Relational, Multi-model"
+21,FileMaker,Relational
+22,Google BigQuery,Relational
+23,Databricks,Multi-model
+24,SAP Adaptive Server,"Relational, Multi-model"

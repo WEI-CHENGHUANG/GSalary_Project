@@ -1,0 +1,665 @@
+@font-face {
+    font-family: "Collegiate";
+    src: url(../fonts/CollegiateFLF.ttf);
+}
+
+@font-face {
+    font-family: "Collegiate-2";
+    src: url(../fonts/CollegiateBlackFLF.ttf);
+}
+
+@font-face {
+    font-family: "Morille";
+    src: url(../fonts/The\ Morille.otf);
+}
+
+@font-face {
+    font-family: "Beliber";
+    src: url(../fonts/Beliber.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    /* background-color: #e3f2fd; */
+    background-color: #a9d8f9;
+}
+
+.container-fluid>.navbar-brand {
+    font-size: 40px;
+    font-family: "Collegiate", sans-serif;
+    margin-left: 80px;
+}
+
+.navbar-nav {
+    font-size: 20px;
+    margin-right: 80px;
+    font-family: "Collegiate-2", sans-serif;
+    text-decoration: underline;
+}
+
+.nav-item {
+    margin: 0 20px;
+}
+
+.btn {
+    border-color: black;
+}
+
+.nav-link {
+    /* background-color: #e3f2fd; */
+    background-color: #a9d8f9;
+    border: 0;
+}
+
+.nav-item>#logInAndRegisterbtn {
+    display: none;
+}
+
+/* =============welcomeZone============== */
+.welcomeZone {
+    /* background-color: antiquewhite; */
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #c0c3c7;
+    height: 700px;
+}
+
+.welcomeZoneContent {
+    /* background-color: rgb(34, 44, 230); */
+    display: flex;
+    justify-content: space-between;
+    width: 1500px;
+
+}
+
+.welcomeZoneItems_1 {
+    background-color: rgb(225, 241, 241);
+    width: 900px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 3%;
+}
+
+/* =========loading image=========== */
+
+.loader1 {
+    --color: #69c4db;
+    --size-mid: 15vmin;
+
+    /* display: block; */
+    position: relative;
+    height: 82%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.loader1::before,
+.loader1::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+}
+
+.loader1.--1::before {
+    width: var(--size-mid);
+    height: var(--size-mid);
+    border: 7px solid var(--color);
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: loader-1 1s linear infinite;
+}
+
+.loader1.--1::after {
+    width: calc(var(--size-mid) - 2px);
+    height: calc(var(--size-mid) - 2px);
+    border: 4.5px solid transparent;
+    border-top-color: var(--color);
+    border-radius: 50%;
+    animation: loader-1 0.6s linear reverse infinite;
+}
+
+@keyframes loader-1 {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+/* ========job post table============== */
+#jobPostsTable {
+    display: none;
+}
+
+.loadMorePosts {
+    /* background-color: aqua; */
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+}
+
+.loadMorePosts>button {
+    border: 0;
+    font-size: 20px;
+    height: 50px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(4, 71, 143);
+    /* background-color: rgb(94, 159, 89); */
+}
+
+.loadMorePosts>button:hover {
+    /* background-color: rgb(129, 222, 122); */
+    background-color: rgb(190, 101, 6);
+}
+
+.welcomeZoneItems_2 {
+    /* background-color: #dde9ed; */
+    background-color: #fcffff;
+    width: 550px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.welcomeparagraph {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* =========== totalAvgSalary================= */
+.totalAvgSalary {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    height: 200px;
+}
+
+.totalAvgSalary {
+    display: flex;
+}
+
+.midAvgSalary {
+    background-color: rgb(202, 224, 239);
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    font-size: 65px;
+    color: rgb(7, 7, 80);
+    border-radius: 45% 45% 50% 50%;
+}
+
+.midAvgSalary>p {
+    margin-top: 10px;
+    font-family: "Collegiate-2", sans-serif;
+}
+
+.stateAvgSalary {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    width: 180px
+}
+
+.stateAvgSalarytext {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Collegiate-2", sans-serif;
+}
+
+.midText {
+    /* background-color: rgb(195, 255, 0); */
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    font-size: 23px;
+    text-decoration: underline;
+    font-family: "Morille", sans-serif;
+}
+
+.midCountSalary {
+    /* background-color: rgb(255, 0, 72); */
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    font-size: 23px;
+    text-decoration: underline;
+    font-family: "Morille", sans-serif;
+
+}
+
+/* =========table================= */
+.table-fixed {
+    /* background-color: rgb(12, 0, 232); */
+    display: block;
+    height: 600px;
+    overflow-y: auto;
+    border-radius: 3%;
+}
+
+.table-fixed>thead {
+    position: sticky;
+    top: 0;
+}
+
+th {
+    min-width: 100px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+td {
+    min-width: 200px;
+    word-break: break-all;
+    font-size: 15px;
+}
+
+.wrongMessage>th {
+    text-align: center;
+}
+
+/* ============================= */
+
+
+.outContainer {
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* =========innerContainer====== */
+.innerContainer {
+    width: 1000px;
+    margin-top: 130px;
+    height: 500px;
+}
+
+.titleForBarChart {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+    font-family: "Morille", sans-serif;
+}
+
+.blockForCSSpurpose {
+    /* background-color: aqua; */
+    width: 330px;
+    display: flex;
+}
+
+.blockForCSSpurpose>p {
+    font-family: "Collegiate-2", sans-serif;
+    font-size: 18px;
+    margin-left: 110px;
+}
+
+.oneRowContainer {
+    /* background-color: blanchedalmond; */
+    display: flex;
+    margin-top: 30px;
+    height: 35px;
+}
+
+.oneRowContainer .stateName {
+    /* background-color: black; */
+    width: 130px;
+    display: flex;
+    justify-content: center;
+}
+
+.oneRowContainer .outerbar {
+    /* background-color: blueviolet; */
+    width: 600px;
+    height: 30px;
+    margin-left: 50px;
+}
+
+.stateName img {
+    width: 45px;
+    height: 45px;
+}
+
+
+.stateName>.state {
+    font-family: "Morille", sans-serif;
+    margin-left: 10px;
+    width: 85px;
+    height: 30px;
+    font-size: 25px;
+    border: 0;
+    background-color: white;
+}
+
+.stateName>button:hover span {
+    display: none;
+}
+
+.stateName>button:hover:before {
+    content: "Detail";
+    color: rgb(228, 193, 78);
+}
+
+/* ==========rightTablelangdb======== */
+
+.rightTablelangdb {
+    /* background-color: aqua; */
+    margin-top: 30px;
+    width: 600px;
+    height: 600px;
+    overflow-y: auto;
+    border-radius: 5% 5% 0 0;
+    margin-bottom: 50px;
+}
+
+.innerrightTablelangdb {
+    background-color: rgb(196, 228, 248);
+    position: sticky;
+    top: 0;
+    height: 100px;
+    z-index: 2;
+}
+
+.innerrightTablelangdb>.titlelangdb {
+    /* background-color: rgb(0, 255, 51); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: 30px;
+    font-family: "Morille", sans-serif;
+}
+
+.innerrightTablelangdb>.titlelangdb>p {
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+#allaupg>table>thead {
+    position: sticky;
+    top: 100px;
+}
+
+#allaudb>table>thead {
+    position: sticky;
+    top: 100px;
+}
+
+#eachstatepg>table>thead {
+    position: sticky;
+    top: 100px;
+}
+
+#eachstatedb>table>thead {
+    position: sticky;
+    top: 100px;
+}
+
+#allAu-tab {
+    width: 100px;
+}
+
+#allaupg {
+    border-radius: 3%;
+}
+
+/* Line chart */
+.outerChartContainer {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+}
+
+.innerchartContainer {
+    width: 1200px;
+    height: 650px;
+}
+
+/* ========= loader2 mid avg salary=========== */
+
+.loader2 {
+    --color: #69c4db;
+    --size-mid: 20vmin;
+
+    /* display: block; */
+    position: relative;
+    height: 82%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.loader2::before,
+.loader2::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+}
+
+.loader2 .--1::before {
+    width: var(--size-mid);
+    height: var(--size-mid);
+    border: 13px solid var(--color);
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: loader-1 1s linear infinite;
+}
+
+.loader2.--1::after {
+    width: calc(var(--size-mid) - 2px);
+    height: calc(var(--size-mid) - 2px);
+    border: 8px solid transparent;
+    border-top-color: var(--color);
+    border-radius: 50%;
+    animation: loader-1 0.6s linear reverse infinite;
+}
+
+@keyframes loader-1 {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+.outertotalSalary {
+    display: none;
+}
+
+/* ============ loader3 line chart========= */
+
+.loader3 {
+    --color: #69c4db;
+    --size-mid: 20vmin;
+
+    /* display: block; */
+    position: relative;
+    height: 82%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.loader3::before,
+.loader3::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+}
+
+.loader3 .--1::before {
+    width: var(--size-mid);
+    height: var(--size-mid);
+    border: 13px solid var(--color);
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: loader-1 1s linear infinite;
+}
+
+.loader3.--1::after {
+    width: calc(var(--size-mid) - 2px);
+    height: calc(var(--size-mid) - 2px);
+    border: 8px solid transparent;
+    border-top-color: var(--color);
+    border-radius: 50%;
+    animation: loader-1 0.6s linear reverse infinite;
+}
+
+#myChart {
+    display: none;
+}
+
+/* 4 */
+/* ============ loader4 programming languages========= */
+
+.loader4 {
+    --color: #69c4db;
+    --size-mid: 10vmin;
+
+    /* display: block; */
+    position: relative;
+    height: 82%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.loader4::before,
+.loader4::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+}
+
+.loader4 .--1::before {
+    width: var(--size-mid);
+    height: var(--size-mid);
+    border: 13px solid var(--color);
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: loader-1 1s linear infinite;
+}
+
+.loader4.--1::after {
+    width: calc(var(--size-mid) - 2px);
+    height: calc(var(--size-mid) - 2px);
+    border: 8px solid transparent;
+    border-top-color: var(--color);
+    border-radius: 50%;
+    animation: loader-1 0.6s linear reverse infinite;
+}
+
+#JobPostsTitle {
+    display: none;
+}
+
+#pills-tabContent {
+    display: none;
+}
+
+td>a {
+    /* color: #741c7c; */
+    color: #1c7c22;
+    font-weight: 500;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+}
+
+td>a:hover {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+td>a::before {
+    position: absolute;
+    top: -2px;
+    left: -7px;
+    box-sizing: content-box;
+    padding: 0 5px;
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid #741c7c; */
+    border: 2px solid #397c1c;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+    transition: opacity 0.2s, transform 0.2s;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+td>a:hover::before {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+
+/* RWD */
+@media (max-width: 1500px) {
+    /* Nav bar */
+
+    .container-fluid>.navbar-brand {
+        margin-left: 80px;
+    }
+
+    .navbar-nav {
+        margin-right: 80px;
+    }
+
+    /* .welcomeZone {
+        height: auto;
+    }
+
+    .welcomeZoneContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } */
+
+
+}
+
+@media (max-width: 1200px) {
+    /* Nav bar */
+
+    .container-fluid>.navbar-brand {
+        margin-left: 80px;
+    }
+
+    .navbar-nav {
+        margin-right: 80px;
+    }
+
+
+
+}
+
+@media (max-width: 600px) {
+
+    /* Nav bar */
+    .container-fluid>.navbar-brand {
+        margin-left: 0;
+    }
+
+    .navbar-nav {
+        margin-right: 0;
+    }
+
+    .welcomeZoneContent {
+        display: flex;
+        width: 100%;
+
+    }
+
+
+}

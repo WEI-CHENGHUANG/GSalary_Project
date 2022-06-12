@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{url_for('static', filename='CSS/state.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{url_for('static', filename='CSS/stateListBar.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{url_for('static', filename='CSS/index.css')}}" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <title>state</title>
+</head>
+
+<body id="bodyBackgroud">
+    <div id="signInPopup" class="popup">{% include 'signIn.html' %}</div>
+    <div id="registerPopup" class="popup">{% include 'register.html' %}</div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">G'day Salary</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="navbar-nav">
+                <li class="nav-item" id="logInAndRegisterContainer">
+                    <button class="nav-link active" id="logInAndRegisterbtn" onclick="btnPushItems_2()">
+                        Log In/Sign Up
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link active" onclick="memberCornerCheck()">
+                        Member Corner
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="topInfoZone">
+        <div class="loader5 --1"></div>
+        <div class="topimgZone">
+            <div class="topMidInfo">
+                <div class="first-txt-box">
+                    <h3 class="first-txt"></h3>
+                </div>
+                <div class="second-txt-box">
+                    <h3 class="second-txt"></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="outMultiSelector">
+        <div class="multi-selector">
+            <div class="select-field">
+                <button name="" placeholder="Programming Languages" id="" class="input-selector">Programming
+                    Languages</button>
+                <span class="down-arrow">&blacktriangledown;</span>
+            </div>
+            <div class="list">
+                <!-- <label for="task1" class="task">
+                <input type="checkbox" name="" id="task1" class="single-checkbox">
+                Task 1
+                <span>Task 1</span>
+            </label> -->
+            </div>
+        </div>
+        <div class="multi-selector">
+            <div class="select-field1">
+                <button name="" placeholder="Programming Languages" id="" class="input-selector">Databases</button>
+                <span class="down-arrow">&blacktriangledown;</span>
+            </div>
+            <div class="list1">
+            </div>
+        </div>
+        <div class="updateChartBox">
+            <!-- <button onclick="updateChart()">fetchData</button> -->
+            <button id="renderdata">Display Data<br>
+                (Max 8 items)</button>
+        </div>
+    </div>
+    <div class="chartCard">
+        <div class="chartBox">
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+    <div class="outerInfoZone">
+        <div class="innerInfoZone">
+            <div class="populationBox">
+                <div class="imgBox1"></div>
+                <div class="textBox">
+                    <p>Population</p>
+                    <p class="statePopulation">....</p>
+                </div>
+            </div>
+            <div class="countJobPost">
+                <div class="imgBox2"></div>
+                <div class="textBox">
+                    <p>Job Posts</p>
+                    <p class="jobPosts">....</p>
+                </div>
+            </div>
+            <div class="maxSalary">
+                <div class="imgBox3"></div>
+                <div class="textBox">
+                    <p>Maximum</p>
+                    <p class="maximum">....</p>
+                </div>
+            </div>
+            <div class="minSalary">
+                <div class="imgBox4"></div>
+                <div class="textBox">
+                    <p>Minimum</p>
+                    <p class="minimum">....</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="mt-auto">
+        <div class="footerBox">{% include 'footer.html' %}</div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<script src="{{url_for('static', filename='JS/state.js')}}"></script>
+<script src="{{url_for('static', filename='JS/memberPopup.js')}}"></script>
+<script src="{{url_for('static', filename='JS/stateListBar.js')}}"></script>
+
+</html>

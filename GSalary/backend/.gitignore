@@ -1,0 +1,6 @@
+.env
+client_secret.json
+
+# This needs to delete from log => git rm --cached backend/model/database_sql_holding.py
+# Then, redo the git add, commit and push again
+database_sql_holding.py

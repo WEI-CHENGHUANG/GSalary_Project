@@ -1,0 +1,105 @@
+.chartCard {
+    height: 750px;
+    /* background: rgba(255, 26, 104, 0.2); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chartBox {
+    width: 1300px;
+    height: 700px;
+    padding: 20px;
+    border-radius: 20px;
+    border: solid 3px rgba(255, 26, 104, 1);
+    background: white;
+}
+
+/* =====drop-down list =========*/
+.outMultiSelector {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+.multi-selector {
+    width: max-content;
+    margin-right: 20px;
+}
+
+.updateChartBox {
+    display: flex;
+    height: 50px;
+}
+
+.select-field,
+.select-field1 {
+    border: 1px solid #5bbdea;
+    border-radius: 5px;
+    height: 50px;
+}
+
+.select-field,
+.select-field1,
+.list,
+.list1 {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 0.3rem;
+}
+
+.list,
+.list1 {
+    box-shadow: 0 30px 60px rgb(0, 0, 0, 0.2);
+    display: none;
+}
+
+.down-arrow {
+    font-size: 1.2rem;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.task {
+    display: block;
+    padding-left: 0;
+}
+
+
+.show {
+    display: block;
+    position: absolute;
+    max-height: 250px;
+    width: 230px;
+    overflow: auto;
+}
+
+.rotate180 {
+    transform: rotate(-60deg);
+}
+
+.input-selector {
+    border: 0;
+    background-color: white;
+    font-weight: bold;
+}
+
+#renderdata {
+    background: #5bbdea;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#renderdata:hover {
+    background: #003148;
+}
