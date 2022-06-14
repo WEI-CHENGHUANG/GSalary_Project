@@ -147,13 +147,13 @@ if __name__ == "__main__":
 
     url = url_without_duplicate
     job_list = []
-    start = time.time()
+    # start = time.time()
     with concurrent.futures.ThreadPoolExecutor(max_workers=15) as executor:
         executor.map(full_content, url)
 
     df = pd.DataFrame(job_list)
     df.to_csv("./final_result/fulltime_jobs_info.csv", index=True)
 
-    end = time.time()
-    print("2/4")
-    print((end - start) / 60)
+    # end = time.time()
+    # print("2/4")
+    # print((end - start) / 60)

@@ -4,6 +4,7 @@ python3  /home/ubuntu/web_scraping/fulltime_jobs_url.py
 python3  /home/ubuntu/web_scraping/fulltime_jobs_info.py
 python3  /home/ubuntu/web_scraping/population_state.py
 python3  /home/ubuntu/web_scraping/nosql.py
+python3  /home/ubuntu/web_scraping/news_scraping.py
 
 
 # python  ~/Desktop/crontab_test/fulltime_jobs_url.py
