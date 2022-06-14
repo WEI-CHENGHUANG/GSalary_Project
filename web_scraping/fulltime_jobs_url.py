@@ -110,7 +110,7 @@ if __name__ == "__main__":
         nsw_list_2,
         nsw_list_3,
     ]
-    start = time.time()
+    # start = time.time()
     job_list = []
 
     for loc, url_1, url_2 in total_url_list:
@@ -121,6 +121,6 @@ if __name__ == "__main__":
 
     df = pd.DataFrame(job_list)
     df.to_csv("./final_result/fulltime_jobs_url.csv")
-    end = time.time()
-    print("1/4")
-    print((end - start) / 60)
+    # end = time.time()
+    # print("1/4")
+    # print((end - start) / 60)

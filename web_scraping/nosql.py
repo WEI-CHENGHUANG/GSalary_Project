@@ -2,7 +2,7 @@
 import csv, os
 from pymongo import MongoClient
 import certifi
-from dotenv import load_dotenv, find_dotenv # pip install python-dotenv
+from dotenv import load_dotenv, find_dotenv  # pip install python-dotenv
 import time
 
 
@@ -48,13 +48,13 @@ def create_documents(collection):
 
 
 if __name__ == "__main__":
-    start = time.time()
+    # start = time.time()
     load_dotenv(find_dotenv())
     MONGODB_passwd = os.environ.get("MONGODB_passwd")
     connection_string = f"mongodb+srv://Wilson:{MONGODB_passwd}@cluster1.mp0is.mongodb.net/?retryWrites=true&w=majority"
     client = MongoClient(connection_string, tlsCAFile=certifi.where())
     gday_db = client.gday
     check_and_create_collection(gday_db)
-    end = time.time()
-    print("3/4")
-    print((end - start) / 60)
+    # end = time.time()
+    # print("3/4")
+    # print((end - start) / 60)

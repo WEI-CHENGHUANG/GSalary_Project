@@ -49,7 +49,6 @@ function userQueryCompany(allJobPostCount) {
       return response.json();
     })
     .then((data) => {
-      console.log(data["nextPage"]);
       if (data["query_job_posts"].length === 0) {
         createFailQuery(keywordInput);
       } else {
@@ -131,10 +130,6 @@ function createNewsBlock(newsUrl) {
       return response.json();
     })
     .then((data) => {
-      console.log(data);
-      data["first_news"][2];
-      data["second_news"];
-
       let firstNews = document.querySelector(".firstNews");
       let image1 = document.createElement("img");
       image1.src = data["first_news"][2];
@@ -159,7 +154,7 @@ function createNewsBlock(newsUrl) {
     .catch((error) => {
       console.log(
         error,
-        "Something went wrong when fetching data via API, Check JS function : queryAttractions()"
+        "Something went wrong when fetching data via API, Check JS function : createNewsBlock()"
       );
     });
 }

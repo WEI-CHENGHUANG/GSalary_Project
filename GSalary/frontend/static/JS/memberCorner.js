@@ -106,38 +106,6 @@ function logOutBackToHmPage(urlUser) {
     });
 }
 
-// function memberlInfo(urlUser) {
-//   fetch(urlUser)
-//     .then((response) => {
-//       return response.json();
-//     })
-//     .then((data) => {
-//       // This url is to get the photo from S3
-//       let fullURL = `https://d19u9n2870afb4.cloudfront.net/${data["photoURL"]}`;
-
-//       let memberIdContent =
-//         document.getElementsByClassName("memberIdContent")[0];
-//       memberIdContent.innerHTML = data["id"];
-//       let memberNameContent =
-//         document.getElementsByClassName("memberNameContent")[0];
-//       memberNameContent.innerHTML = data["name"];
-//       let memberEmailContent =
-//         document.getElementsByClassName("memberEmailContent")[0];
-//       memberEmailContent.innerHTML = data["email"];
-
-//       let photoTag = document.getElementsByClassName("photo")[0];
-//       let imgTag = document.createElement("img");
-//       imgTag.className = "userimage";
-//       imgTag.src = fullURL;
-//       photoTag.append(imgTag);
-//     })
-//     .catch((error) => {
-//       console.log(
-//         error,
-//         "Something went wrong when fetching data via API, Check JS function : memberlInfo(urlUser)"
-//       );
-//     });
-// }
 function uploadPhoto(urlMember) {
   let input_file = document.querySelector("#my_file");
   let formData = new FormData();

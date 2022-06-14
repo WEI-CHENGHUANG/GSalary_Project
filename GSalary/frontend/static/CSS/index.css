@@ -349,6 +349,13 @@ td {
     font-family: "Morille", sans-serif;
 }
 
+.hintIcon {
+    display: flex;
+    margin-right: 85px;
+    flex-direction: column;
+    align-items: center;
+}
+
 .blockForCSSpurpose {
     /* background-color: aqua; */
     width: 330px;
