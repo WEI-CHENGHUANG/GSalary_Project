@@ -125,6 +125,45 @@ function createFailQuery(keywordInput) {
   tbody.append(trTag);
 }
 
+function createNewsBlock(newsUrl) {
+  fetch(newsUrl)
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      console.log(data);
+      data["first_news"][2];
+      data["second_news"];
+
+      let firstNews = document.querySelector(".firstNews");
+      let image1 = document.createElement("img");
+      image1.src = data["first_news"][2];
+      let firstNewsContent = document.querySelector(".firstNewsContent");
+      let a1 = document.createElement("a");
+      a1.href = data["first_news"][1];
+      a1.innerHTML = data["first_news"][0];
+
+      firstNews.insertBefore(image1, firstNewsContent);
+      firstNewsContent.append(a1);
+
+      let secNews = document.querySelector(".secNews");
+      let image2 = document.createElement("img");
+      image2.src = data["second_news"][2];
+      let secNewsContent = document.querySelector(".secNewsContent");
+      let a2 = document.createElement("a");
+      a2.href = data["second_news"][1];
+      a2.innerHTML = data["second_news"][0];
+      secNews.insertBefore(image2, secNewsContent);
+      secNewsContent.append(a2);
+    })
+    .catch((error) => {
+      console.log(
+        error,
+        "Something went wrong when fetching data via API, Check JS function : queryAttractions()"
+      );
+    });
+}
+
 function insertDataToBars(salaryUrl) {
   fetch(salaryUrl)
     .then((response) => {
@@ -175,6 +214,7 @@ function insertDataToBars(salaryUrl) {
       );
     });
 }
+
 function createMidAvgSalary(salaryUrl) {
   fetch(salaryUrl)
     .then((response) => {
@@ -207,7 +247,9 @@ function redirectToStatePage(state) {
 }
 
 const salaryUrl = "/api/salary";
-// querytagsCheck();
 userQueryCompany(allJobPostCount, "");
 createMidAvgSalary(salaryUrl);
 insertDataToBars(salaryUrl);
+
+const newsUrl = "/api/news";
+createNewsBlock(newsUrl);

@@ -112,7 +112,7 @@ if __name__ == "__main__":
     ]
     start = time.time()
     job_list = []
-    # # celar [0:1]
+
     for loc, url_1, url_2 in total_url_list:
         for i in range(1, 500):
             first_stage = extract(url_1, i, url_2)
@@ -124,5 +124,3 @@ if __name__ == "__main__":
     end = time.time()
     print("1/4")
     print((end - start) / 60)
-    # print(f'Job posts web scraping finished and spent: {(end - start) / 60} min(s). >> 1 out 3.')
-    

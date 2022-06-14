@@ -1,6 +1,8 @@
 from model.database import queryOneClauseNew, insertNewMembers, queryMultileClausesNew, updateRecored
 from flask_restful import Resource
 from flask import request, make_response, jsonify, session, Response
+
+# pip3 install flask_jwt_extended
 from flask_jwt_extended import create_access_token, set_access_cookies, unset_jwt_cookies
 import datetime
 import jwt
