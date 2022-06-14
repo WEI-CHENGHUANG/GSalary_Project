@@ -2,7 +2,7 @@ from model.database import queryOneClauseNew, insertNewMembers, queryMultileClau
 from model.database_nosql import insert_post_content, query_post_content
 from flask_restful import Resource
 from flask import request, make_response, jsonify
-import jwt
+import jwt  # pip3 install jwt
 import os
 import uuid
 from dotenv import load_dotenv, find_dotenv

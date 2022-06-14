@@ -4,7 +4,7 @@ import os
 import datetime
 from flask_jwt_extended import create_access_token, set_access_cookies
 from dotenv import load_dotenv, find_dotenv
-from google.oauth2 import id_token
+from google.oauth2 import id_token  # pip3 install google-auth
 from google.auth.transport import requests
 
 

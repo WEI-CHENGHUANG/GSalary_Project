@@ -1,7 +1,7 @@
 from xmlrpc.client import boolean
 from dotenv import load_dotenv, find_dotenv
 import os
-from pymongo import MongoClient
+from pymongo import MongoClient  # pip3 install pymongo & pip3 install "pymongo[srv]"
 import certifi
 import csv
 from collections import defaultdict

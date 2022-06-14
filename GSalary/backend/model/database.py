@@ -1,5 +1,5 @@
-# pip install python-dotenv
-# pip install mysql-connector-python
+# pip3 install python-dotenv
+# pip3 install mysql-connector-python
 from mysql.connector import pooling, Error
 from dotenv import load_dotenv
 import os

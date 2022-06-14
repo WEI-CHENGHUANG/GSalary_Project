@@ -7,9 +7,11 @@ from model.database_nosql import (
     max_and_min_salary,
     query_limit_in_hundred_docs,
 )
+from model.database import queryOneClauseNew
 from flask_restful import Resource
 from flask import request, make_response, jsonify
 from collections import defaultdict
+from datetime import date
 
 
 class salary(Resource):
@@ -96,3 +98,12 @@ class jobposts(Resource):
             page = int(page) + 1
             response_language = make_response(jsonify({"nextPage": page, "query_job_posts": query_limit_in_hundred_docs(skipPage, keyword)[:100]}))
         return response_language
+
+
+class news(Resource):
+    def get(self):
+        today = date.today()
+        query = "SELECT sub_content, article_url, image_url, date FROM news WHERE date = %s"
+        new_detail = queryOneClauseNew(query, (str(today)))
+        response_news = make_response(jsonify({"first_news": new_detail[0], "second_news": new_detail[1]}))
+        return response_news
