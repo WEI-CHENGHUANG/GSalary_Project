@@ -102,8 +102,7 @@ class jobposts(Resource):
 
 class news(Resource):
     def get(self):
-        today = date.today()
-        query = "SELECT sub_content, article_url, image_url, date FROM news WHERE date = %s"
-        new_detail = queryOneClauseNew(query, (str(today)))
+        query = "SELECT sub_content, article_url, image_url, date FROM news ORDER BY id DESC LIMIT %s"
+        new_detail = queryOneClauseNew(query, (2))
         response_news = make_response(jsonify({"first_news": new_detail[0], "second_news": new_detail[1]}))
         return response_news
