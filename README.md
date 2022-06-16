@@ -1,6 +1,7 @@
 # G'day Salary Information Dashboard
-![Uploading homepage.gif…]()
 
+
+![homepage](https://user-images.githubusercontent.com/90821623/174084300-c0ac6e54-4513-404a-8b6c-c42f0af62b55.gif)
 
 > G'day Salary aims to provide salary information in IT field for candidates or graduates who do not have experience or limited experience in this field.
 
