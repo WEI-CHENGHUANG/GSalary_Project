@@ -49,7 +49,7 @@ In order to achieve the goal above, here are five important processing stages.
 ---
 
 ## How To Broswe The Website
-![Jun-17-2022 00-13-49](https://user-images.githubusercontent.com/90821623/174089821-90bd8076-1566-4ac5-87e0-af7f89fb868b.gif)
+![Jun-17-2022 00-13-49](https://user-images.githubusercontent.com/90821623/174089821-90bd8076-1566-4ac5-87e0-af7f89fb868b.gif) <br>
 The GIF above is displaying how you can search more further detail information via G'day Salary.
 
 ![PLtable](https://user-images.githubusercontent.com/90821623/174091879-ecf68f85-1b82-4341-a951-8c1041f3a5bf.gif)
