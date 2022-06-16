@@ -1,18 +1,18 @@
-# G'day Salary Information board
+# G'day Salary Information Dashboard
 
-![Project Image](project-image-url)
+![Project Image](https://bootcamp-assignment.s3.ap-southeast-2.amazonaws.com/homepage.gif)
 
-> This is a ReadMe template to help save you time and effort.
+> G'day Salary aims to provide salary information in IT field for candidates or graduates who do not have experience or limited experience in this field.
+
+> This information board was built by three backbone data, salary, programming languages, and database system.
 
 ---
 
 ### Table of Contents
 
-You're sections headers will be used to reference location of destination.
-
 - [Description](#description)
-- [How To Use](#how-to-use)
-- [References](#references)
+- [How To Broswe The Website](#how-to-broswe-the-website)
+- [System Architecture](#system-architecture)
 - [License](#license)
 - [Author Info](#author-info)
 
@@ -20,22 +20,34 @@ You're sections headers will be used to reference location of destination.
 
 ## Description
 
-Creating ReadMe's for your Github repository can be tedious. I hope this template can save you time and effort as well as provide you with some consistency across your projects.
+G'day Salary applies the concept of data pipeline to extract, transform, and load (ETL) data to databases in order for dashboard to demonstrate useful information for visitors.
+
+In order to achieve the goal above, here are five important processing stages.
+
+1. Data Ingestion: Auto scrape human resource website.
+2. Data Lake: Store all raw data into AWS S3
+3. Data Preparation & Computation: Transform raw data to useful information.
+4. Data Warehouse: Store all information into AWS RDS(MySQL), MongoDB(NoSQL), AWS S3.
+5. Data Visualisation & Analytics: Visualise all useful information to users.
 
 #### Technologies
 
-- Technology 1
-- Technology 2
+- Python: Flask, FlaskRESTful, BeautifulSoup, Boto3, OAuth2, mysql-connector, pymongo etc.
+- Dockerfile
+- HTML
+- CSS
+- Javascript
+- Bootstrap
+- Chart.js
+- AWS: EC2, S3, RDS, CloudFront(CDN)
+- Nginx: https, Reverse proxy
+- Git:
 
 [Back To The Top](#read-me-template)
 
 ---
 
-## How To Use
-
-#### Installation
-
-#### API Reference
+## How To Broswe The Website
 
 ```html
 <p>dummy code</p>
@@ -45,35 +57,9 @@ Creating ReadMe's for your Github repository can be tedious. I hope this templat
 
 ---
 
-## References
+## System Architecture
 
-[Back To The Top](#read-me-template)
-
----
-
-## License
-
-MIT License
-
-Copyright (c) [2017] [James Q Quick]
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+![System Architecture](https://bootcamp-assignment.s3.ap-southeast-2.amazonaws.com/test.png)
 
 [Back To The Top](#read-me-template)
 
@@ -81,7 +67,7 @@ SOFTWARE.
 
 ## Author Info
 
-- Twitter - [@jamesqquick](https://twitter.com/jamesqquick)
-- Website - [James Q Quick](https://jamesqquick.com)
+- Linkedin - [@Wilson](https://www.linkedin.com/in/wei-cheng-huang-wilson/)
+- Website - [G'day Salary](https://www.engineersalaryquery.website/)
 
 [Back To The Top](#read-me-template)
