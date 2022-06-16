@@ -42,7 +42,7 @@ In order to achieve the goal above, here are five important processing stages.
 - AWS: EC2, S3, RDS, CloudFront(CDN)
 - MongoDB
 - Nginx: https, Reverse proxy
-- Git, Cronjob
+- Git, CronJob
 
 [Back To The Top](#read-me-template)
 
