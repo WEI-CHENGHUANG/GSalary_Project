@@ -1,6 +1,5 @@
 # G'day Salary Information Dashboard
 
-
 ![homepage](https://user-images.githubusercontent.com/90821623/174084300-c0ac6e54-4513-404a-8b6c-c42f0af62b55.gif)
 
 > G'day Salary aims to provide salary information in IT field for candidates or graduates who do not have experience or limited experience in this field.
@@ -42,7 +41,7 @@ In order to achieve the goal above, here are five important processing stages.
 - Chart.js
 - AWS: EC2, S3, RDS, CloudFront(CDN)
 - Nginx: https, Reverse proxy
-- Git:
+- Git
 
 [Back To The Top](#read-me-template)
 
