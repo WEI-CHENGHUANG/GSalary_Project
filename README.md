@@ -53,7 +53,9 @@ In order to achieve the goal above, here are five important processing stages.
 The GIF above is displaying how you can search more further detail information via G'day Salary.
 
 ![PLtable](https://user-images.githubusercontent.com/90821623/174091879-ecf68f85-1b82-4341-a951-8c1041f3a5bf.gif)
-The second GIF is showing how to detect the number of job posts by the programming language or database skills you have now.
+The second GIF is showing the average salary and the existing job posts containing salary in IT around Australia.<br>
+In addition, the tables demonstrate the number of job positions based on the programming language or database skills you currently have.<br>
+Users can also click on the state's name to link to dedicated page.
 
 
 [Back To The Top](#read-me-template)
