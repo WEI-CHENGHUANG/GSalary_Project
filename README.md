@@ -1,4 +1,4 @@
-# G'day Salary Information Dashboard
+# G'day Salary Dashboard
 
 ![homepage](https://user-images.githubusercontent.com/90821623/174084300-c0ac6e54-4513-404a-8b6c-c42f0af62b55.gif)
 
@@ -44,11 +44,12 @@ In order to achieve the goal above, here are five important processing stages.
 - Nginx: https, Reverse proxy
 - Git, CronJob
 
-[Back To The Top](#read-me-template)
+[Back To The Top](#gday-salary-dashboard)
 
 ---
 
 ## How To Broswe The Website
+
 ![Jun-17-2022 01-58-22](https://user-images.githubusercontent.com/90821623/174114363-b9855dab-6eb4-4a42-a255-2726c16fc7a9.gif)
 The GIF above displays how you can search for further detailed information via G'day Salary.
 
@@ -66,7 +67,7 @@ The page provides each state's detailed information; especially, users can have 
 ![Jun-17-2022 01-50-48](https://user-images.githubusercontent.com/90821623/174113652-bd9bc72c-5fe4-4bec-9b40-ef4712015d11.gif)
 The membership system offers members a place to share their previous work experiences with other members. This system is designed to increase the members' engagement on our website.<br>
 
-[Back To The Top](#read-me-template)
+[Back To The Top](#gday-salary-dashboard)
 
 ---
 
@@ -74,7 +75,7 @@ The membership system offers members a place to share their previous work experi
 
 ![System Architecture](https://bootcamp-assignment.s3.ap-southeast-2.amazonaws.com/data_pipeline.png)
 
-[Back To The Top](#read-me-template)
+[Back To The Top](#gday-salary-dashboard)
 
 ---
 
@@ -83,4 +84,4 @@ The membership system offers members a place to share their previous work experi
 - Linkedin - [@Wilson](https://www.linkedin.com/in/wei-cheng-huang-wilson/)
 - Website - [G'day Salary](https://www.engineersalaryquery.website/)
 
-[Back To The Top](#read-me-template)
+[Back To The Top](#gday-salary-dashboard)
