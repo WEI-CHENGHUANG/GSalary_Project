@@ -49,10 +49,9 @@ In order to achieve the goal above, here are five important processing stages.
 ---
 
 ## How To Broswe The Website
+![Jun-17-2022 00-13-49](https://user-images.githubusercontent.com/90821623/174089821-90bd8076-1566-4ac5-87e0-af7f89fb868b.gif)
 
-```html
-<p>dummy code</p>
-```
+
 
 [Back To The Top](#read-me-template)
 
