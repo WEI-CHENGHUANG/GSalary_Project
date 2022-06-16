@@ -1,6 +1,6 @@
 # G'day Salary Information Dashboard
 
-![Project Image](https://bootcamp-assignment.s3.ap-southeast-2.amazonaws.com/homepage.gif)
+![https://bootcamp-assignment.s3.ap-southeast-2.amazonaws.com/homepage.gif]()
 
 > G'day Salary aims to provide salary information in IT field for candidates or graduates who do not have experience or limited experience in this field.
 
