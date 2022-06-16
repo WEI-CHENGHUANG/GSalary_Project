@@ -60,7 +60,8 @@ Users can also click on the state's name to link to a dedicated page.
 ![Screen Shot 2022-06-17 at 00 37 58](https://user-images.githubusercontent.com/90821623/174094778-cd68c270-58cc-4876-8825-0803f1a7aca3.png)
 The normal distribution graph explains Australia's salary distribution.
 
-
+![Jun-17-2022 01-37-34](https://user-images.githubusercontent.com/90821623/174110497-e42712a2-999d-4ca6-b335-0c879e7f5f4b.gif)
+The page provides each state's detailed information; especially, users can have a more precise number of job posts related to the region they are looking for a job position. 
 [Back To The Top](#read-me-template)
 
 ---
