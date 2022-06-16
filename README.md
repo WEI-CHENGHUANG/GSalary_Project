@@ -4,7 +4,7 @@
 
 > G'day Salary aims to provide salary information in IT field for candidates or graduates who do not have experience or limited experience in this field.
 
-> This information board was built by three backbone data, salary, programming languages, and database system.
+> This information board was built by three backbone data, salary, programming languages, and database systems.
 
 ---
 
@@ -28,7 +28,7 @@ In order to achieve the goal above, here are five important processing stages.
 2. Data Lake: Store all raw data into AWS S3
 3. Data Preparation & Computation: Transform raw data to useful information.
 4. Data Warehouse: Store all information into AWS RDS(MySQL), MongoDB(NoSQL), AWS S3.
-5. Data Visualisation & Analytics: Visualise all useful information to users.
+5. Data Visualisation & Analytics: Visualise all valuable information to users.
 
 #### Technologies
 
@@ -40,6 +40,7 @@ In order to achieve the goal above, here are five important processing stages.
 - Bootstrap
 - Chart.js
 - AWS: EC2, S3, RDS, CloudFront(CDN)
+- MongoDB
 - Nginx: https, Reverse proxy
 - Git
 
@@ -59,7 +60,7 @@ In order to achieve the goal above, here are five important processing stages.
 
 ## System Architecture
 
-![System Architecture](https://bootcamp-assignment.s3.ap-southeast-2.amazonaws.com/test.png)
+![System Architecture](https://bootcamp-assignment.s3.ap-southeast-2.amazonaws.com/data_pipeline.png)
 
 [Back To The Top](#read-me-template)
 
