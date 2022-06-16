@@ -50,12 +50,15 @@ In order to achieve the goal above, here are five important processing stages.
 
 ## How To Broswe The Website
 ![Jun-17-2022 00-13-49](https://user-images.githubusercontent.com/90821623/174089821-90bd8076-1566-4ac5-87e0-af7f89fb868b.gif) <br>
-The GIF above is displaying how you can search more further detail information via G'day Salary.
+The GIF above displays how you can search for further detailed information via G'day Salary.
 
 ![PLtable](https://user-images.githubusercontent.com/90821623/174091879-ecf68f85-1b82-4341-a951-8c1041f3a5bf.gif)
-The second GIF is showing the average salary and the existing job posts containing salary in IT around Australia.<br>
+The second GIF shows the average salary and the existing job posts containing salaries in IT around Australia.<br>
 In addition, the tables demonstrate the number of job positions based on the programming language or database skills you currently have.<br>
-Users can also click on the state's name to link to dedicated page.
+Users can also click on the state's name to link to a dedicated page.
+
+![Screen Shot 2022-06-17 at 00 37 58](https://user-images.githubusercontent.com/90821623/174094778-cd68c270-58cc-4876-8825-0803f1a7aca3.png)
+The normal distribution graph explains Australia's salary distribution.
 
 
 [Back To The Top](#read-me-template)
