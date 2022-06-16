@@ -13,7 +13,6 @@
 - [Description](#description)
 - [How To Broswe The Website](#how-to-broswe-the-website)
 - [System Architecture](#system-architecture)
-- [License](#license)
 - [Author Info](#author-info)
 
 ---
