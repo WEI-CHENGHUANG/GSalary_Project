@@ -13,6 +13,7 @@
 - [Description](#description)
 - [How To Broswe The Website](#how-to-broswe-the-website)
 - [System Architecture](#system-architecture)
+- [Database Architecture](#database-architecture)
 - [Author Info](#author-info)
 
 ---
@@ -76,6 +77,12 @@ The membership system offers members a place to share their previous work experi
 
 [Back To The Top](#gday-salary-dashboard)
 
+---
+
+## Database Architecture
+![Screen Shot 2022-06-17 at 14 08 49](https://user-images.githubusercontent.com/90821623/174223170-fb49752f-a0ec-41c8-947e-fbc8a1e948c8.png)
+
+[Back To The Top](#gday-salary-dashboard)
 ---
 
 ## Author Info
