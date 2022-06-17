@@ -80,7 +80,8 @@ The membership system offers members a place to share their previous work experi
 ---
 
 ## Database Architecture
-![Screen Shot 2022-06-17 at 14 08 49](https://user-images.githubusercontent.com/90821623/174223170-fb49752f-a0ec-41c8-947e-fbc8a1e948c8.png)
+
+![Screen Shot 2022-06-17 at 14 18 50](https://user-images.githubusercontent.com/90821623/174224049-f64a2a85-3a39-4417-93e0-16935ae2627f.png)
 
 [Back To The Top](#gday-salary-dashboard)
 ---
