@@ -73,7 +73,7 @@ The membership system offers members a place to share their previous work experi
 
 ## System Architecture
 
-![System Architecture](https://bootcamp-assignment.s3.ap-southeast-2.amazonaws.com/data_pipeline.png)
+![Screen Shot 2022-06-17 at 14 21 35](https://user-images.githubusercontent.com/90821623/174224348-62ac79e0-cfee-43c5-bde7-c45fc10a1182.png)
 
 [Back To The Top](#gday-salary-dashboard)
 
