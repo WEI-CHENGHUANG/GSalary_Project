@@ -1,5 +1,4 @@
 # This is for EC2 processing
-python3  /home/ubuntu/web_scraping/test.py
 python3  /home/ubuntu/web_scraping/fulltime_jobs_url.py
 python3  /home/ubuntu/web_scraping/fulltime_jobs_info.py
 python3  /home/ubuntu/web_scraping/population_state.py
