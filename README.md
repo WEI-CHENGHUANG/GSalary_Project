@@ -75,6 +75,13 @@ The membership system offers members a place to share their previous work experi
 
 ![Screen Shot 2022-06-17 at 14 21 35](https://user-images.githubusercontent.com/90821623/174224348-62ac79e0-cfee-43c5-bde7-c45fc10a1182.png)
 
+1. Data Ingestion: Set up Cronjob and use a shell script to execute four web-scraping Python files for data ingestion.
+2. Data Lake: Apply the Python boto3 module to store all raw data in CSV format to AWS S3. 
+3. Data Preparation & Computation: Crawl the top 100 popular programming languages and databases as reference dictionaries, then scan each job post content to extract keywords and sort out the salary into the same number format, then store them into MongoDB in a JSON format.
+4. Data Warehouse: Categorise and calculate the clean data via manipulating the NoSQL and SQL to useful information and then design APIs based on RESTful framework for data visualisation.
+5. Data Visualisation & Analytics: Visualise the valuable information to users via utilising HTML, CSS, JavaScript, Chart.js, and Bootstrap.
+
+
 [Back To The Top](#gday-salary-dashboard)
 
 ---
