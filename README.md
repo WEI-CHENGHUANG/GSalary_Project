@@ -32,7 +32,7 @@ In order to achieve the goal above, here are five important processing stages.
 
 #### Technologies
 
-- Python: Flask, FlaskRESTful, BeautifulSoup, Boto3, OAuth2, mysql-connector, pymongo etc.
+- Python: Flask, FlaskRESTful, BeautifulSoup, pandas, Boto3, OAuth2, mysql-connector, pymongo etc.
 - Dockerfile
 - HTML
 - CSS
