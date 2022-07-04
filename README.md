@@ -88,8 +88,8 @@ The membership system offers members a place to share their previous work experi
 ## Database Architecture
 ![Screen Shot 2022-06-17 at 14 20 14](https://user-images.githubusercontent.com/90821623/174224159-76963b8f-f0cd-46f0-ad6b-d9a1d8c30536.png)
 
-AWS S3 is the first step of storing the raw data from web scraping.
-MySQL aims to deal with membership system and two other web scraping information from two other independent websites.
+AWS S3 is the first step of storing the raw data from web scraping.<br>
+MySQL aims to deal with membership system and two other web scraping information from two other independent websites.<br>
 MongoDB is the main storage for all clean data and member's post comment.
 
 [Back To The Top](#gday-salary-dashboard)
