@@ -221,7 +221,7 @@ function createMidAvgSalary(salaryUrl) {
 
       midAvgSalary.innerHTML = `$ ${iNF.format(data["total"]["avg Salary"])}`;
       let midCountSalary = document.querySelector(".innerMidCountSalary");
-      midCountSalary.innerHTML = `current salary posts  ${iNF.format(
+      midCountSalary.innerHTML = `Including salary info's posts:  ${iNF.format(
         data["total"]["count"]
       )}`;
       const loader2 = document.querySelector(".loader2");

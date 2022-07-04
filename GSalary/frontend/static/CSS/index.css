@@ -288,7 +288,7 @@ body {
     /* background-color: rgb(255, 0, 72); */
     display: flex;
     justify-content: center;
-    width: 400px;
+    /* width: 400px; */
     font-size: 23px;
     text-decoration: underline;
     font-family: "Morille", sans-serif;
@@ -335,8 +335,8 @@ td {
     justify-content: space-evenly;
 }
 
-/* =========innerContainer====== */
-.innerContainer {
+/* =========leftBars====== */
+.leftBars {
     width: 1000px;
     margin-top: 130px;
     height: 500px;
@@ -670,8 +670,8 @@ td>a:hover::before {
 }
 
 
-/* RWD */
-@media (max-width: 1500px) {
+/* ==========RWD================ */
+@media (max-width: 1600px) {
     /* Nav bar */
 
     .container-fluid>.navbar-brand {
@@ -682,20 +682,43 @@ td>a:hover::before {
         margin-right: 80px;
     }
 
-    /* .welcomeZone {
-        height: auto;
+    #jobPostsTable {
+        margin-left: 50px;
     }
 
-    .welcomeZoneContent {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    } */
+    .welcomeZoneItems_1 {
+        width: 800px;
+        background-color: transparent;
+    }
 
+    #idNum {
+        display: none;
+    }
+
+    .jobPostidNum {
+        display: none;
+    }
+
+    .outContainer {
+        flex-direction: column;
+    }
+
+    .innerContainer {
+        display: flex;
+        justify-content: space-around;
+    }
 
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
+    .welcomeZoneItems_2 {
+        width: 400px;
+        margin-right: 50px;
+    }
+
+}
+
+@media (max-width: 1300px) {
     /* Nav bar */
 
     .container-fluid>.navbar-brand {
@@ -706,8 +729,38 @@ td>a:hover::before {
         margin-right: 80px;
     }
 
+    #idNum {
+        display: none;
+    }
 
 
+
+    #jobPostLocation {
+        display: none;
+    }
+
+    .officeLocation {
+        display: none;
+    }
+
+    .welcomeZoneItems_2 {
+        width: 350px;
+        margin-right: none;
+    }
+}
+
+@media (max-width: 1250px) {
+    .welcomeZoneItems_2 {
+        display: none;
+    }
+
+    #jobPostsTable {
+        margin-left: 170px;
+    }
+
+    .loadMorePosts {
+        margin-left: 200px;
+    }
 }
 
 @media (max-width: 600px) {
